@@ -10,7 +10,7 @@ pipeline {
       steps {
         script {
             withKubeConfig([serverUrl: 'https://192.168.49.2']) {
-                sh 'kubectl get pod'
+                sh "kubectl get pod -n ${params.namespace}"
                 println "=========== Successful${namespace} ============"
                 }
                 }
