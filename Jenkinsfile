@@ -18,6 +18,7 @@ pipeline {
                         docker push victoria68/pizzafrontend
                         """
                         println "=========== Successfully Build the Web Application ============"
+                    }
                 }
             }
         }
