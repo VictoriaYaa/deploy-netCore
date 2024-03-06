@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pizzabackend #default dns name
+  name: pizzabackend
 spec:
   replicas: 1
   template:
